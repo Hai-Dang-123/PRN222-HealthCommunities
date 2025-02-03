@@ -1,0 +1,293 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HealthCommunitiesCheck2.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HealthCommunitiesCheck2.3k5j7t0frf.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\css\\about.css",
+      "PackagePath": "staticwebassets\\css\\about.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\images\\about1.jpg",
+      "PackagePath": "staticwebassets\\images\\about1.jpg"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\images\\admissions.png",
+      "PackagePath": "staticwebassets\\images\\admissions.png"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\images\\header.jpg",
+      "PackagePath": "staticwebassets\\images\\header.jpg"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\images\\imageActivity.png",
+      "PackagePath": "staticwebassets\\images\\imageActivity.png"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\images\\slide-homePage.jpg",
+      "PackagePath": "staticwebassets\\images\\slide-homePage.jpg"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HealthCommunitiesCheck2.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HealthCommunitiesCheck2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HealthCommunitiesCheck2.props",
+      "PackagePath": "build\\HealthCommunitiesCheck2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HealthCommunitiesCheck2.props",
+      "PackagePath": "buildMultiTargeting\\HealthCommunitiesCheck2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HealthCommunitiesCheck2.props",
+      "PackagePath": "buildTransitive\\HealthCommunitiesCheck2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

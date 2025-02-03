@@ -1,0 +1,21 @@
+﻿@{
+    var currentPage = ViewData["CurrentPage"]?.ToString();
+}
+
+<header id="main-header">
+    <div class="banner">
+        <img src="~/images/header.jpg" alt="Banner HealthCommunity">
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a asp-page="/Index" class="@(currentPage == "Index" ? "active" : "")">Trang chủ</a></li>
+            <li><a asp-page="/About" class="@(currentPage == "About" ? "active" : "")">Giới thiệu</a></li>
+            <li><a asp-page="/News" class="@(currentPage == "News" ? "active" : "")">Tin tức</a></li>
+            <li><a asp-page="/Training" class="@(currentPage == "Training" ? "active" : "")">Đào tạo</a></li>
+            <li><a asp-page="/Research" class="@(currentPage == "Research" ? "active" : "")">Nghiên cứu</a></li>
+            <li><a asp-page="/MedicalKnowledge" class="@(currentPage == "MedicalKnowledge" ? "active" : "")">Kiến thức ngành y</a></li>
+            <li><a asp-page="/Contact" class="@(currentPage == "Contact" ? "active" : "")">Liên hệ</a></li>
+            <li class="hotline"><a href="tel:0123456789">Hotline: 0123 456 789</a></li>
+        </ul>
+    </nav>
+</header>

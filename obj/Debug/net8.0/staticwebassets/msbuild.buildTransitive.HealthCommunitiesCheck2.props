@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\HealthCommunitiesCheck2.props" />
+</Project>

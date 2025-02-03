@@ -1,0 +1,458 @@
+﻿html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 60px; /* Giữ khoảng cách khi footer xuất hiện */
+}
+
+/* Header */
+#main-header {
+    position: relative;
+    z-index: 100;
+}
+
+    /* Banner */
+    #main-header .banner {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+
+        #main-header .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: height 0.3s ease; /* Hiệu ứng thay đổi chiều cao khi cuộn */
+        }
+
+    /* Navbar */
+    #main-header nav {
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+        #main-header nav ul {
+            width : 100%;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            
+        }
+
+            #main-header nav ul li {
+                margin: 0 15px;
+            }
+
+                #main-header nav ul li a {
+                    text-decoration: none;
+                    color: #333;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 15px 20px;
+                    display: block;
+                    transition: background-color 0.3s ease;
+                }
+
+                    #main-header nav ul li a:hover {
+                        background-color: #007bff;
+                        color: #fff;
+                    }
+
+        /* Hotline */
+        #main-header nav .hotline {
+            font-weight: bold;
+            color: #d9534f;
+            font-size: 16px;
+        }
+
+/* Hiệu ứng khi cuộn */
+.scrolled #main-header .banner img {
+    height: 250px; /* Chiều cao giảm khi cuộn trang */
+}
+
+.scrolled #main-header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Thêm nền cho navbar khi fixed */
+    transition: all 0.3s ease; /* Hiệu ứng mượt mà */
+}
+
+body.scrolled {
+    padding-top: 80px; /* Dự phòng cho navbar fixed */
+}
+
+    /* Thêm hiệu ứng khi navbar có thể cuộn */
+    body.scrolled #main-header nav ul li a {
+        padding: 10px 20px; /* Giảm padding khi cuộn để navbar gọn gàng hơn */
+    }
+
+
+/* HOMEPAGE */
+#homePage .slide {
+    width: 100%;
+    height: auto; /* Hoặc chiều cao bạn muốn */
+}
+
+    #homePage .slide img {
+        width: 100%;
+        height: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều cao của slide */
+        object-fit: cover; /* Giữ tỷ lệ ảnh mà không bị kéo dãn hoặc biến dạng */
+    }
+
+/* Tổng thể */
+#activity {
+    padding: 60px 20px;
+    background-color: #f0f8ff; /* Màu xanh nhạt */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #007bff; /* Màu xanh chủ đạo */
+}
+
+/* Cột */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    box-sizing: border-box;
+}
+
+/* Cột bên trái */
+.left-column {
+    width: 25%; /* 1/4 chiều rộng */
+    position: relative;
+    height: auto; /* Chiều cao cho ảnh */
+    background-image: url('../images/imageActivity.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+    .left-column .content {
+        position: absolute;
+        top: 0; /* Đặt phần tử bắt đầu từ phần trên cùng */
+        left: 0; /* Đặt phần tử bắt đầu từ bên trái */
+        right: 0; /* Đặt phần tử kéo dài đến phần bên phải */
+        bottom: 0; /* Đặt phần tử kéo dài đến phần dưới cùng */
+        background: rgba(0, 0, 0, 0.4); /* Nền mờ */
+        padding: 20px;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-column .content-title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .left-column .content-description {
+        font-size: 16px;
+    }
+
+/* Cột bên phải (Chứa các bảng) */
+.right-column {
+    width: 70%; /* 3/4 chiều rộng */
+}
+
+.tables {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Table Style */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .styled-table thead {
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 10px;
+        border: 1px solid #dddddd;
+    }
+
+    .styled-table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .styled-table tbody tr:hover {
+        background-color: #e6f7ff;
+    }
+
+
+#admissions {
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.announcement-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.separator {
+    width: 50px;
+    height: 2px;
+    background-color: #007bff; /* Màu gạch ngang */
+    margin-right: 15px;
+}
+
+.announcement-title h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.image-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.image-link {
+    width: 48%; /* Chia 2 cột bằng nhau */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .image-link img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .image-link:hover img {
+        transform: scale(1.1); /* Hiệu ứng zoom khi hover */
+    }
+
+    .image-link p {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        font-size: 18px;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+/* General Layout */
+#research, #service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+    gap: 0; /* Loại bỏ khoảng cách giữa các phần tử */
+    flex-wrap: nowrap; /* Cấm các phần tử xuống hàng */
+}
+
+    #research .research-columns, #service .service-columns {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 0; /* Loại bỏ khoảng cách giữa các phần tử */
+    }
+
+.research-column, .service-column {
+    position: relative;
+    width: 20%; /* Cột đầu tiên chiếm 20% chiều rộng */
+    height: 200px; /* Chiều cao cho cột đầu tiên */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #333; /* Nền của cột đầu tiên */
+}
+
+    .research-column .content, .service-column .content {
+        background: rgba(0, 0, 0, 0.5); /* Nền mờ */
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+        .research-column .content h3, .service-column .content h3 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+.research-item, .service-item {
+    background-color: #d9e8f9; /* Nền xanh dương nhạt */
+    width: 23%; /* Mỗi item chiếm 23% chiều rộng */
+    height: 200px; /* Chiều cao của các item */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left:20px;
+}
+
+    .research-item h4, .service-item h4 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .research-item:hover, .service-item:hover {
+        background-color: #a2c2e3; /* Nền xanh đậm hơn khi hover */
+        transform: scale(1.05); /* Phóng to nhẹ khi hover */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng khi hover */
+    }
+
+    .research-item a, .service-item a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+/* Cột đầu tiên của NGHIÊN CỨU và DỊCH VỤ KHCN */
+.research-column.first-column, .service-column.first-column {
+    width: 20%; /* Cột đầu tiên chiếm 20% chiều rộng */
+}
+
+/* Cải thiện cách căn chỉnh và đảm bảo tất cả các cột đều được căn chỉnh đều */
+#research .research-columns, #service .service-columns {
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+
+
+
+.information-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.info-column {
+    width: 48%; /* Cột chiếm 48% chiều rộng để có khoảng cách giữa các cột */
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.see-more {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+    .see-more:hover {
+        color: #0056b3;
+    }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item {
+    display: flex;
+    gap: 15px;
+    text-decoration: none; /* Bỏ gạch chân cho link */
+    color: inherit; /* Giữ lại màu sắc văn bản gốc */
+}
+
+    .item:hover {
+        background-color: #f0f0f0; /* Tạo hiệu ứng hover cho item */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng khi hover */
+        border-radius: 5px; /* Bo góc khi hover */
+    }
+
+.item-image {
+    width: 80px; /* Chiều rộng của hình ảnh */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-description {
+    flex: 1; /* Cho phép mô tả chiếm phần còn lại của không gian */
+    font-size: 14px;
+    color: #555;
+}
+
+    .item-description p {
+        margin: 0;
+    }
+
+@media (max-width: 768px) {
+    .information-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
