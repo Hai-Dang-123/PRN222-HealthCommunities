@@ -40,13 +40,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\HealthCommunitiesCheck2.3k5j7t0frf.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3k5j7t0frf"},{"Name":"integrity","Value":"sha256-HaJtvLp9GiHfLM1DYegZqkO8FF5H6IL8fSjDjX1k3gw="},{"Name":"label","Value":"_content/HealthCommunitiesCheck2/HealthCommunitiesCheck2.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1141"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HaJtvLp9GiHfLM1DYegZqkO8FF5H6IL8fSjDjX1k3gw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 02 Feb 2025 09:35:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1141"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HaJtvLp9GiHfLM1DYegZqkO8FF5H6IL8fSjDjX1k3gw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Feb 2025 07:10:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HealthCommunitiesCheck2/HealthCommunitiesCheck2.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\HealthCommunitiesCheck2.3k5j7t0frf.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-HaJtvLp9GiHfLM1DYegZqkO8FF5H6IL8fSjDjX1k3gw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1141"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HaJtvLp9GiHfLM1DYegZqkO8FF5H6IL8fSjDjX1k3gw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 02 Feb 2025 09:35:06 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1141"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HaJtvLp9GiHfLM1DYegZqkO8FF5H6IL8fSjDjX1k3gw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Feb 2025 07:10:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HealthCommunitiesCheck2/images/about1.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\about1.jpg'))</AssetFile>
