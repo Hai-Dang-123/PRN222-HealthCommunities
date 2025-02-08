@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hJWFI56k5YA=",
+  "dgSpecHash": "LXo3sobEqqc=",
   "success": true,
-  "projectFilePath": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2.csproj",
+  "projectFilePath": "D:\\HOC\\PRN211\\PRN211-HealthCommunities\\PRN222-HealthCommunities\\HealthCommunitiesCheck2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dangl\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\dangl\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

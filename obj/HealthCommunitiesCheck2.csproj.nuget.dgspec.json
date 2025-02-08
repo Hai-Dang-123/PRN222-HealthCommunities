@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2.csproj": {}
+    "D:\\HOC\\PRN211\\PRN211-HealthCommunities\\PRN222-HealthCommunities\\HealthCommunitiesCheck2.csproj": {}
   },
   "projects": {
-    "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2.csproj": {
+    "D:\\HOC\\PRN211\\PRN211-HealthCommunities\\PRN222-HealthCommunities\\HealthCommunitiesCheck2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2.csproj",
+        "projectUniqueName": "D:\\HOC\\PRN211\\PRN211-HealthCommunities\\PRN222-HealthCommunities\\HealthCommunitiesCheck2.csproj",
         "projectName": "HealthCommunitiesCheck2",
-        "projectPath": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2.csproj",
+        "projectPath": "D:\\HOC\\PRN211\\PRN211-HealthCommunities\\PRN222-HealthCommunities\\HealthCommunitiesCheck2.csproj",
         "packagesPath": "C:\\Users\\dangl\\.nuget\\packages\\",
-        "outputPath": "E:\\KÌ 7 MÃI ĐỈNH\\PRN222\\project\\HealthCommunitiesCheck2\\HealthCommunitiesCheck2\\obj\\",
+        "outputPath": "D:\\HOC\\PRN211\\PRN211-HealthCommunities\\PRN222-HealthCommunities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
