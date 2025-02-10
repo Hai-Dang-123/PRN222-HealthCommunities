@@ -1,21 +1,62 @@
-﻿@{
+﻿@inject HealthCommunitiesCheck2.Utilities.UserUtility UserUtility
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@using System.Security.Claims
+
+@{
     var currentPage = ViewData["CurrentPage"]?.ToString();
+
+    var fullName = UserUtility.GetFullNameFromToken();
+    
 }
 
-<header id="main-header">
-    <div class="banner">
-        <img src="~/images/header.jpg" alt="Banner HealthCommunity">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/featherlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/featherlight.min.js"></script>
+
+
+<header id="top">
+    <div class="wrapper">
+        <h1 class="logo"><a href="/Index">Health Communities</a></h1>
+        <nav>
+            <ul id="navigation">
+                <li><a asp-page="/Index" class="@(currentPage == "Index" ? "active" : "")">Home</a></li> 
+            <li><a asp-page="/About" class="@(currentPage == "About" ? "active" : "")">About</a></li> 
+             <li><a asp-page="/News" class="@(currentPage == "News" ? "active" : "")">News</a></li> 
+             <li><a asp-page="/Training" class="@(currentPage == "Training" ? "active" : "")">Training</a></li> 
+             <li><a asp-page="/Research" class="@(currentPage == "Research" ? "active" : "")">Research</a></li> 
+             <li><a asp-page="/MedicalKnowledge" class="@(currentPage == "MedicalKnowledge" ? "active" : "")">Medical Knowledge</a></li> 
+             <li><a asp-page="/Contact" class="@(currentPage == "Contact" ? "active" : "")">Contact</a></li> 
+             
+
+             @* điều kiện *@
+              @if (string.IsNullOrEmpty(fullName)) 
+            
+            { 
+                 <!-- Khi chưa đăng nhập --> 
+                 <li><a asp-page="/Login">Sign In</a></li> 
+                 <li><a asp-page="/Register">Sign Up</a></li> 
+             } 
+             else 
+             { 
+                 <li class="dropdown"> 
+                     <a href="#" class="dropdown-toggle" id="userDropdown"> 
+                         <span>@fullName</span> 
+                     </a> 
+                     <ul class="dropdown-menu" id="dropdownMenu">
+                            <li><a asp-page="/Profile">Profile</a></li>
+                            <li><a asp-page="/Logout">Logout</a></li>
+                        </ul> 
+                 </li> 
+
+             }
+
+            </ul>
+        </nav>
     </div>
-    <nav class="navbar">
-        <ul>
-            <li><a asp-page="/Index" class="@(currentPage == "Index" ? "active" : "")">Trang chủ</a></li>
-            <li><a asp-page="/About" class="@(currentPage == "About" ? "active" : "")">Giới thiệu</a></li>
-            <li><a asp-page="/News" class="@(currentPage == "News" ? "active" : "")">Tin tức</a></li>
-            <li><a asp-page="/Training" class="@(currentPage == "Training" ? "active" : "")">Đào tạo</a></li>
-            <li><a asp-page="/Research" class="@(currentPage == "Research" ? "active" : "")">Nghiên cứu</a></li>
-            <li><a asp-page="/MedicalKnowledge" class="@(currentPage == "MedicalKnowledge" ? "active" : "")">Kiến thức ngành y</a></li>
-            <li><a asp-page="/Contact" class="@(currentPage == "Contact" ? "active" : "")">Liên hệ</a></li>
-            <li class="hotline"><a href="tel:0123456789">Hotline: 0123 456 789</a></li>
-        </ul>
-    </nav>
 </header>
+

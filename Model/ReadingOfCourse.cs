@@ -6,10 +6,10 @@ namespace HealthCommunitiesCheck2.Model
     public class ReadingOfCourse
     {
         [Key]
-        public int ReadingID { get; set; }
+        public Guid ReadingID { get; set; }
 
         [ForeignKey("Course")]
-        public int CourseID { get; set; }
+        public Guid CourseID { get; set; }
 
         [Required, MaxLength(255)]
         public string Title { get; set; }

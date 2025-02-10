@@ -1,5 +1,6 @@
 ﻿using HealthCommunitiesCheck2.Data;
 using HealthCommunitiesCheck2.IRepositories;
+
 using HealthCommunitiesCheck2.Repositories;
 
 namespace HealthCommunitiesCheck2.UnitOfWork
@@ -19,6 +20,10 @@ namespace HealthCommunitiesCheck2.UnitOfWork
             ReadingOfCourse = new ReadingOfCourseRepository(_context);
             VideoOfCourse = new VideoOfCourseRepository(_context);  
             // ADD MORE
+            Role = new RoleRepository(_context);
+            Wallet = new WalletRepository(_context);
+            Transaction = new TransactionRepository(_context);
+            Token = new TokenRepository(_context);
         }
 
         public IUserRepository User {  get; private set; }
@@ -34,6 +39,18 @@ namespace HealthCommunitiesCheck2.UnitOfWork
         public IReadingOfCourseRepository ReadingOfCourse { get; private set; }
 
         public IVideoOfCourseRepository VideoOfCourse { get; private set; }
+        public IRoleRepository Role { get; private set; }
+        public IWalletRepository Wallet { get; private set; }
+        public ITransactionRepository Transaction { get; private set; }
+        public ITokenRepository Token { get; private set; }
+        public async Task<int> SaveAsync()
+        {
+            return await _context.SaveChangesAsync();
+        }
+        public async Task<bool> SaveChangeAsync()
+        {
+            return await _context.SaveChangesAsync() > 0;
+        }
 
         public void Dispose()
         {

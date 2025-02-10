@@ -6,10 +6,10 @@ namespace HealthCommunitiesCheck2.Model
     public class VideoOfCourse
     {
         [Key]
-        public int VideoID { get; set; }
+        public Guid VideoID { get; set; }
 
         [ForeignKey("Course")]
-        public int CourseID { get; set; }
+        public Guid CourseID { get; set; }
 
         [Required, MaxLength(255)]
         public string Title { get; set; }

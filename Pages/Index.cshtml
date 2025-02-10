@@ -1,286 +1,278 @@
-﻿@page
+﻿
+@page
 @model IndexModel
+@inject HealthCommunitiesCheck2.Utilities.UserUtility UserUtility
 @{
     ViewData["Title"] = "Home page";
+    var fullName = UserUtility.GetFullNameFromToken();
+    // var userId = UserUtility.GetUserIDFromToken();
 }
 
-<div id="homePage">
-    <div class="slide">
-        <img src="~/images/slide-homePage.jpg" alt="Slide HealthCommunity">
-    </div>
-</div>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/featherlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 
-<div id="activity">
-    <!-- Tiêu đề -->
-    <h2 class="section-title">CÁC LĨNH VỰC HOẠT ĐỘNG</h2>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/featherlight.min.js"></script>
 
-    <!-- 2 Cột -->
-    <div class="columns">
-        <!-- Cột 1: Hình ảnh với chữ nổi -->
-        <div class="column left-column">
-            <div class="content">
-                <h3 class="content-title">Lĩnh vực 1</h3>
-                <p class="content-description">Mô tả về lĩnh vực này</p>
-            </div>
-        </div>
 
-        <!-- Cột 2: Bảng -->
-        <div class="column right-column">
-            <div class="tables">
-                <!-- Table 1: Đào tạo Y khoa liên tục - CME -->
-                <div class="table-container">
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th colspan="3">ĐÀO TẠO Y KHOA LIÊN TỤC - CME</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>CME-cap-nhat-kien-thuc-cap-cuu-ban-dau-danh-cho-bac-si</td>
-                                <td>CME “Cập nhật kiến thức chuyên môn trong hành nghề Dược”</td>
-                                <td>CME-quan-ly-chat-luong-benh-vien</td>
-                            </tr>
-                            <tr>
-                                <td>CME “Quản lý chất lượng bệnh viện”</td>
-                                <td>CME-Su-pham-y-hoc-co-ban</td>
-                                <td>CME “Sư phạm y học cơ bản”</td>
-                            </tr>
-                            <tr>
-                                <td>CME-Kiem-soat-nhiem-khuan</td>
-                                <td>CME “Kiểm soát nhiễm khuẩn”</td>
-                                <td>CME-Phuc-hoi-chuc-nang</td>
-                            </tr>
-                            <tr>
-                                <td>CME “Phục hồi chức năng”</td>
-                                <td>CME-Dinh-duong-tiet-che</td>
-                                <td>CME “Dinh dưỡng tiết chế”</td>
-                            </tr>
-                            <tr>
-                                <td>CME-dien-tam-do-ECG</td>
-                                <td>CME “Điện tâm đồ”</td>
-                                <td>CME-dien-tam-do-can-ban-basic-ECG</td>
-                            </tr>
-                            <tr>
-                                <td>CME “Điện tâm đồ căn bản”</td>
-                                <td>CME-Cham-soc-nguoi-benh-toan-dien</td>
-                                <td>CME “Chăm sóc người bệnh toàn diện”</td>
-                            </tr>
-                            <tr>
-                                <td>CME-Quan-ly-dieu-duong</td>
-                                <td>CME “Quản lý điều dưỡng”</td>
-                                <td>CME-Kiem-soat-nhiem-khuan-co-ban</td>
-                            </tr>
-                            <tr>
-                                <td>CME “Kiểm soát nhiễm khuẩn cơ bản”</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- Table 2: Bồi dưỡng tiêu chuẩn chức danh nghề nghiệp -->
-                <div class="table-container">
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th colspan="3">BỒI DƯỠNG TIÊU CHUẨN CHỨC DANH NGHỀ NGHIỆP</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp Bác sĩ</td>
-                                <td>Bồi dưỡng chuyên môn cho bác sĩ</td>
-                                <td>Bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp Y tế công cộng</td>
-                            </tr>
-                            
-                            <tr>
-                                <td>Bồi dưỡng cho cán bộ Y tế công cộng</td>
-                                <td>Bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp Kỹ thuật y</td>
-                                <td>Bồi dưỡng cho nhân viên kỹ thuật y tế</td>
-                               
-                            </tr>
-                            <tr>
-                                <td>Bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp Hộ sinh</td>
-                                <td>Bồi dưỡng cho nhân viên hộ sinh</td>
-                                <td>Bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp Điều dưỡng</td>
-                            </tr>
-                         
-                            <tr>
-                                <td>Bồi dưỡng cho nhân viên điều dưỡng</td>
-                                <td>Bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp Dược</td>
-                                <td>Bồi dưỡng cho nhân viên dược</td>
-                  
-                            </tr>
-                            <tr>
-                                <td>Bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp Bác sĩ Y học dự phòng</td>
-                                <td>Bồi dưỡng cho bác sĩ y học dự phòng</td>
-                              
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- Table 3: Huấn luyện vệ sinh an toàn lao động -->
-                <div class="table-container">
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th colspan="3">HUẤN LUYỆN VỆ SINH AN TOÀN LAO ĐỘNG</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Người quản lý phụ trách công tác ATVSLĐ</td>
-                                <td>Quản lý công tác an toàn lao động</td>
-                                <td>Người làm công tác ATVSLĐ</td>
-                            </tr>
-                          
-                            <tr>
-                                <td>Nhân viên phụ trách an toàn lao động</td>
-                                <td>Người lao động làm công việc yêu cầu nghiêm ngặt về ATVSLĐ</td>
-                                <td>Nhân viên làm việc tại các môi trường yêu cầu nghiêm ngặt về ATVSLĐ</td>
-                            
-                            </tr>
-                            <tr>
-                                <td>Kế toán, lễ tân, nhân viên văn phòng, nhân viên kinh doanh</td>
-                                <td>Nhân viên văn phòng và các bộ phận không trực tiếp làm công tác ATVSLĐ</td>
-                                <td>Người làm công tác y tế</td>
-                            </tr>
-                           
-                            <tr>
-                                <td>Công tác y tế trong an toàn lao động</td>
-                                <td>An toàn, vệ sinh viên</td>
-                                <td>Nhân viên chịu trách nhiệm về an toàn, vệ sinh lao động</td>
-                          
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+<section id="banner" class="fade-in"><a name="home"></a>
+    <div class="wrapper">
+        <h2>Health Communities</h2>
+        <p class="subtitle">Healthy Living, Happy Life</p>
+        <div class="buttons">
+            <a href="/MedicalKnowledge" class="button-1">Learn More</a>
+            <a href="/About" class="button-2">About Us</a>
         </div>
     </div>
-</div>
+</section>
 
-<div id="admissions">
-    <!-- Tiêu đề Thông báo tuyển sinh -->
-    <div class="announcement-title">
-        <span class="separator"></span>
-        <h3>THÔNG BÁO TUYỂN SINH</h3>
+<section class="services-section fade-in">
+    <a name="services"></a>
+    <div class="wrapper">
+        <h3>Services</h3>
+        <p class="subtitle">We do lots of cool things</p>
+        <ul class="services-list">
+            <li>
+                <div class="image-container">
+                    <img src="images/icon-pencil.png" alt="services icon">
+                </div>
+                <h5>Health Training & Education</h5>
+                <p>Enhancing skills for healthcare professionals. </p>
+                <a href="#">Learn More</a>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="images/icon-camera.png" alt="services icon">
+                </div>
+                <h5>Health Projects & Partnerships</h5>
+                <p>Driving innovation through research and collaboration. </p>
+                <a href="#">Learn More</a>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="images/icon-film.png" alt="services icon">
+                </div>
+                <h5>Health News & Events</h5>
+                <p>Updates on research, healthcare, and events. </p>
+                <a href="#">Learn More</a>
+            </li>
+            <div class="clear"></div>
+        </ul>
     </div>
+</section>
 
-    <!-- 2 Cột hình chuyển hướng -->
-    <div class="image-links">
-        <div class="image-link">
-            <a href="#">
-                <img src="~/images/admissions.png" alt="Link 1">
-                <p>Đào tạo Y khoa</p>
+<section class="text-section fade-in">
+    <div class="wrapper">
+        <div class="image align-left">
+            <img src="images/light-bulb.png" alt="health research" class="align-left">
+        </div>
+        <div class="text align-left">
+            <h3>Advancing Health Through Research & Training</h3>
+            <p class="subtitle">Empowering Healthcare Professionals</p>
+            <p>We are dedicated to improving healthcare through innovative research and high-quality training programs. Our goal is to enhance knowledge and skills, fostering a healthier community.</p>
+            <p>Join us in shaping the future of healthcare with cutting-edge education and impactful collaborations.</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+
+<section class="features-section fade-in">
+    <div class="wrapper">
+        <ul class="feature-squares">
+            <li>
+                <div class="image">
+                    <img src="images/icon-eye.png" alt="Research Excellence">
+                </div>
+                <div class="text">
+                    <h5>Research Excellence</h5>
+                    <p>We lead groundbreaking healthcare research, focusing on innovative solutions to enhance patient care, disease prevention, and medical advancements for a healthier future.</p>
+                </div>
+            </li>
+            <li>
+                <div class="image">
+                    <img src="images/icon-clock.png" alt="Quality Training">
+                </div>
+                <div class="text">
+                    <h5>Quality Training</h5>
+                    <p>Our comprehensive training programs equip healthcare professionals with cutting-edge knowledge and skills, ensuring excellence in clinical practice, research, and public health initiatives.</p>
+                </div>
+            </li>
+            <li>
+                <div class="image">
+                    <img src="images/icon-dashboard.png" alt="Strong Collaboration">
+                </div>
+                <div class="text">
+                    <h5>Strong Collaboration</h5>
+                    <p>By partnering with leading universities, hospitals, and research centers, we foster a dynamic network that drives innovation and real-world impact in the healthcare sector.</p>
+                </div>
+            </li>
+            <li>
+                <div class="image">
+                    <img src="images/icon-headset.png" alt="Continuous Support">
+                </div>
+                <div class="text">
+                    <h5>Continuous Support</h5>
+                    <p>We provide ongoing mentorship, access to valuable resources, and continuous professional development to empower healthcare professionals throughout their careers.</p>
+                </div>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</section>
+
+
+
+<section class="text-section fade-in">
+    <div class="wrapper">
+        <div class="image align-right">
+            <img src="images/chat-bubbles.png" alt="health discussion" class="align-left" style="margin-top: 60px;">
+        </div>
+        <div class="text align-right">
+            <h3>Connect With Us</h3>
+            <p class="subtitle">Committed to Advancing Healthcare Together</p>
+            <p>We value collaboration and open discussions to improve healthcare research, training, and innovation.</p>
+            <ul class="list-checkmarks">
+                <li>Expert-led healthcare training programs.</li>
+                <li>Innovative medical research initiatives.</li>
+                <li>Partnerships with leading institutions.</li>
+                <li>Continuous support for healthcare professionals.</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+
+
+
+
+
+<section class="portfolio-section fade-in">
+    <a name="projects"></a>
+    <h3>Our Projects</h3>
+    <p class="subtitle">Innovative Research & Training Initiatives</p>
+
+    <ul class="portfolio-list">
+        <li class="item">
+            <a href="images/project-1.jpg" data-featherlight="images/project-1.jpg" class="photo-overlay">
+                <img src="images/project-1-thumb.jpg" alt="Healthcare Training Program" />
             </a>
-        </div>
-        <div class="image-link">
-            <a href="#">
-                <img src="~/images/admissions.png" alt="Link 2">
-                <p>Chuyên ngành y tế</p>
+        </li>
+        <li class="item">
+            <a href="images/project-2.jpg" data-featherlight="images/project-2.jpg" class="photo-overlay">
+                <img src="images/project-2-thumb.jpg" alt="Public Health Research" />
             </a>
-        </div>
-    </div>
-</div>
+        </li>
+        <li class="item">
+            <a href="images/project-3.jpg" data-featherlight="images/project-3.jpg" class="photo-overlay">
+                <img src="images/project-3-thumb.jpg" alt="Medical Innovation Studies" />
+            </a>
+        </li>
+        <li class="item">
+            <a href="images/project-4.jpg" data-featherlight="images/project-4.jpg" class="photo-overlay">
+                <img src="images/project-4-thumb.jpg" alt="Community Health Programs" />
+            </a>
+        </li>
+        <li class="item">
+            <a href="images/project-5.jpg" data-featherlight="images/project-5.jpg" class="photo-overlay">
+                <img src="images/project-5-thumb.jpg" alt="Global Health Partnerships" />
+            </a>
+        </li>
+        <li class="item">
+            <a href="images/project-6.jpg" data-featherlight="images/project-6.jpg" class="photo-overlay">
+                <img src="images/project-6-thumb.jpg" alt="Clinical Research Trials" />
+            </a>
+        </li>
+        <div class="clear"></div>
+    </ul>
+</section>
 
-<div id="research">
-    <!-- Cột đầu tiên: NGHIÊN CỨU -->
-    <div class="research-column first-column">
-        <div class="content">
-            <h3 class="content-title">NGHIÊN CỨU</h3>
-        </div>
-    </div>
+  @if (string.IsNullOrEmpty(fullName)) 
+            
+            { 
 
-    <!-- 4 cột còn lại với href để chuyển hướng -->
-    <div class="research-columns">
-        <a href="/dot-quy-tim-mach" class="research-item">
-            <h4>Đột quỵ - Tim mạch</h4>
-        </a>
-        <a href="/te-bao-goc" class="research-item">
-            <h4>Tế bào gốc</h4>
-        </a>
-        <a href="/y-sinh-hoc" class="research-item">
-            <h4>Y sinh học</h4>
-        </a>
-        <a href="/tieu-duong-beo-phi" class="research-item">
-            <h4>Tiểu đường - Béo phì</h4>
-        </a>
-    </div>
-</div>
+    <section class="email-list-section fade-in">
+    <h3>Join Us Now</h3>
+    <p class="subtitle">Be a part of our health community</p>
 
-<div id="service">
-    <!-- Cột DỊCH VỤ KHCN -->
-    <div class="service-column first-column">
-        <div class="content">
-            <h3 class="content-title">DỊCH VỤ KHCN</h3>
-        </div>
-    </div>
+    <button type="submit" title="Join Now">Join Now</button>
+</section>
+            } else{
+    <section class="email-list-section fade-in">
+        <h3>Hi @fullName</h3>
+        <p class="subtitle">Happy to see you here !!!</p>
 
-    <!-- 4 cột còn lại với khả năng chuyển hướng -->
-    <div class="service-columns">
-        <a href="/phong-thi-nghiem" class="service-item">
-            <h4>Phòng thí nghiệm</h4>
-        </a>
-        <a href="/to-chuc-chung-nhan" class="service-item">
-            <h4>Tổ chức chứng nhận</h4>
-        </a>
-        <a href="/to-chuc-giam-dinh" class="service-item">
-            <h4>Tổ chức giám định</h4>
-        </a>
-    </div>
-</div>
+    </section>
+
+            }
 
 
-
-<div class="information-section">
-    <!-- Cột 1: Thông tin y tế -->
-    <div class="info-column">
-        <div class="header">
-            <h3 class="title">Thông tin y tế</h3>
-            <a href="link-to-more-info" class="see-more"><< xem thêm</a> <!-- Thay "link-to-more-info" bằng đường dẫn thực tế -->
-        </div>
-        <div class="content">
-            <a href="link-to-info1" class="item">
-                <img src="~/images/info1.jpg" alt="Thông tin 1" class="item-image">
-                <div class="item-description">
-                    <p>Mô tả thông tin y tế số 1, mô tả chi tiết về thông tin y tế trong lĩnh vực y tế.</p>
+<section class="pricing-section fade-in">
+    <div class="wrapper">
+        <h3>Services</h3>
+        <p class="subtitle">We do lots of cool things</p>
+        <ul class="pricing-table">
+            <li>
+                <div class="price-container">
+                    <span class="currency-symbol" style="left: 40px;">$</span>
+                    <span class="price">9</span>
+                    <span class="term">/mo</span>
                 </div>
-            </a>
-            <a href="link-to-info2" class="item">
-                <img src="~/images/info2.jpg" alt="Thông tin 2" class="item-image">
-                <div class="item-description">
-                    <p>Mô tả thông tin y tế số 2, mô tả chi tiết về thông tin y tế trong lĩnh vực y tế.</p>
+                <h5>Basic</h5>
+                <ul class="features">
+                    <li>500GB Storage</li>
+                    <li>Unlimited Bandwidth</li>
+                    <li>10 Clients</li>
+                    <li>50 Projects</li>
+                    <div class="clear"></div>
+                </ul>
+                <a href="#" class="button-2">Begin</a>
+            </li>
+            <li>
+                <div class="price-container">
+                    <span class="currency-symbol" style="left: 20px;">$</span>
+                    <span class="price">12</span>
+                    <span class="term">/mo</span>
                 </div>
-            </a>
-        </div>
+                <h5>Premium</h5>
+                <ul class="features">
+                    <li>1TB Storage</li>
+                    <li>Unlimited Bandwidth</li>
+                    <li>50 Clients</li>
+                    <li>250 Projects</li>
+                    <div class="clear"></div>
+                </ul>
+                <a href="#" class="button-1">Begin</a>
+            </li>
+            <li>
+                <div class="price-container">
+                    <span class="currency-symbol" style="left: 20px;">$</span>
+                    <span class="price">18</span>
+                    <span class="term">/mo</span>
+                </div>
+                <h5>Elite</h5>
+                <ul class="features">
+                    <li>5TB Storage</li>
+                    <li>Unlimited Bandwidth</li>
+                    <li>Unlimited Clients</li>
+                    <li>Unlimited Projects</li>
+                    <div class="clear"></div>
+                </ul>
+                <a href="#" class="button-2">Begin</a>
+            </li>
+            <div class="clear"></div>
+        </ul>
     </div>
+</section>
 
-    <!-- Cột 2: Kiến thức sức khỏe -->
-    <div class="info-column">
-        <div class="header">
-            <h3 class="title">Kiến thức sức khỏe</h3>
-            <a href="link-to-more-health-info" class="see-more"><< xem thêm</a> <!-- Thay "link-to-more-health-info" bằng đường dẫn thực tế -->
-        </div>
-        <div class="content">
-            <a href="link-to-health-info1" class="item">
-                <img src="~/images/health1.jpg" alt="Kiến thức 1" class="item-image">
-                <div class="item-description">
-                    <p>Mô tả kiến thức sức khỏe số 1, mô tả chi tiết về kiến thức sức khỏe và các vấn đề liên quan.</p>
-                </div>
-            </a>
-            <a href="link-to-health-info2" class="item">
-                <img src="~/images/health2.jpg" alt="Kiến thức 2" class="item-image">
-                <div class="item-description">
-                    <p>Mô tả kiến thức sức khỏe số 2, mô tả chi tiết về kiến thức sức khỏe và các vấn đề liên quan.</p>
-                </div>
-            </a>
-        </div>
+<section class="text-section fade-in">
+    <div class="text align-center">
+        <h3>Heard Enough?</h3>
+        <p class="subtitle">Let's get started</p>
+        <p><a href="#" class="button-1">Begin</a></p>
     </div>
-</div>
+</section>
 
 
 

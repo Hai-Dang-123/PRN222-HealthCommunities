@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/HOC/PRN211/PRN211-HealthCommunities/PRN222-HealthCommunities/Pages/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/HOC/PRN211/PRN211-HealthCommunities/PRN222-HealthCommunities/Pages/MedicalKnowledge.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNhbEtub3dsZWRnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,6 +70,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/HOC/PRN211/PRN211-HealthCommunities/PRN222-HealthCommunities/Pages/Research.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HOC/PRN211/PRN211-HealthCommunities/PRN222-HealthCommunities/Pages/Shared/MinimalLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXE1pbmltYWxMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/HOC/PRN211/PRN211-HealthCommunities/PRN222-HealthCommunities/Pages/Shared/_Footer.cshtml]

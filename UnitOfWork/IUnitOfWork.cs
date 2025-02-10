@@ -12,6 +12,11 @@ namespace HealthCommunitiesCheck2.UnitOfWork
         INewsRepository News { get; }
         IReadingOfCourseRepository ReadingOfCourse { get; }
         IVideoOfCourseRepository VideoOfCourse { get; }
-
+        IRoleRepository Role { get; }
+        IWalletRepository Wallet { get; }
+        ITransactionRepository Transaction { get; }
+        ITokenRepository Token { get; }
+        Task<int> SaveAsync();
+        Task<bool> SaveChangeAsync();
     }
 }

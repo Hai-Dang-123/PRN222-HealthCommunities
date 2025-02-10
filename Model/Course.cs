@@ -6,7 +6,7 @@ namespace HealthCommunitiesCheck2.Model
     public class Course
     {
         [Key]
-        public int CourseID { get; set; }
+        public Guid CourseID { get; set; }
 
         [Required, MaxLength(255)]
         public string Title { get; set; }
@@ -17,7 +17,7 @@ namespace HealthCommunitiesCheck2.Model
         public DateTime EndDate { get; set; }
 
         [ForeignKey("User")]
-        public int UserID { get; set; }
+        public Guid UserID { get; set; }
 
         public bool IsOnline { get; set; }
 

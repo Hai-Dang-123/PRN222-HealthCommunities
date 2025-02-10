@@ -8,13 +8,13 @@ namespace HealthCommunitiesCheck2.Model
     public class Enrollment
     {
         [Key]
-        public int EnrollmentID { get; set; }
+        public Guid EnrollmentID { get; set; }
 
         [ForeignKey("User")]
-        public int UserID { get; set; }
+        public Guid UserID { get; set; }
 
         [ForeignKey("Course")]
-        public int CourseID { get; set; }
+        public Guid CourseID { get; set; }
 
         public DateTime EnrollmentDate { get; set; } = DateTime.UtcNow;
 
