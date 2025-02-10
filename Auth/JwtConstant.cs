@@ -23,12 +23,12 @@
         /// </summary>
         public class KeyClaim
         {
-            public const string Username = nameof(Username);
+            
             public const string Email = nameof(Email);
             public const string Password = nameof(Password);
             public const string Role = nameof(Role);
-            public const string userId = nameof(userId);
-            public const string fullName = nameof(fullName);
+            public const string UserId = nameof(UserId);
+            public const string FullName = nameof(FullName);
         }
     }
 }

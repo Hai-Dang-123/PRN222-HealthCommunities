@@ -17,6 +17,9 @@ namespace HealthCommunitiesCheck2.Data
         public DbSet<ReadingOfCourse> Readings { get; set; }
         public DbSet<VideoOfCourse> Videos { get; set; }
         public DbSet<News> News { get; set; }
+        public DbSet<Wallet> Wallets { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -28,6 +31,7 @@ namespace HealthCommunitiesCheck2.Data
             modelBuilder.Entity<ReadingOfCourse>().HasKey(r => r.ReadingID);
             modelBuilder.Entity<VideoOfCourse>().HasKey(v => v.VideoID);
             modelBuilder.Entity<News>().HasKey(n => n.NewsID);
+            modelBuilder.Entity<RefreshToken>().HasKey(rt => rt.RefreshTokenId);
 
             // Định nghĩa quan hệ giữa các bảng
             modelBuilder.Entity<User>()
@@ -75,7 +79,48 @@ namespace HealthCommunitiesCheck2.Data
                 .HasIndex(u => u.Email)
                 .IsUnique();
 
+            //PAYMENT
+            modelBuilder.Entity<Wallet>()
+                .HasOne(w => w.User)
+                .WithMany(u => u.Wallets)
+                .HasForeignKey(w => w.UserID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Transaction>()
+    .HasOne(t => t.SenderUser)
+    .WithMany(u => u.SenderTransactions)
+    .HasForeignKey(t => t.SenderUserID)
+    .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Transaction>()
+                .HasOne(t => t.ReceiverUser)
+                .WithMany(u => u.ReceiverTransactions)
+                .HasForeignKey(t => t.ReceiverUserID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
+            modelBuilder.Entity<Transaction>()
+                .HasOne(t => t.Wallet)
+                .WithMany(w => w.Transactions)
+                .HasForeignKey(t => t.WalletID)
+                .OnDelete(DeleteBehavior.Restrict);
+            //TOKEN
+            
+
+            modelBuilder.Entity<RefreshToken>()
+                .HasIndex(rt => rt.UserId);
+
+            modelBuilder.Entity<RefreshToken>()
+                .HasOne<User>()
+                .WithMany()
+                .HasForeignKey(rt => rt.UserId)
+                .OnDelete(DeleteBehavior.Cascade); // Nếu xóa user thì xóa luôn token
+
+
+
             base.OnModelCreating(modelBuilder);
+
+            DbSeeder.Seed(modelBuilder);
         }
     }
 }

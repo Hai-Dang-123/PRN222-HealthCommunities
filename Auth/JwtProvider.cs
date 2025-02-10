@@ -43,5 +43,49 @@ namespace HealthCommunitiesCheck2.Auth
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
+        public static bool Validation(string token)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(JwtSettingModel.SecretKey);
+
+
+            tokenHandler.ValidateToken(token, new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuer = false,
+                ValidateAudience = false,
+            }, out SecurityToken validatedToken);
+
+            return true;
+        }
+        public static List<Claim> DecodeToken(string token)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.UTF8.GetBytes(JwtSettingModel.SecretKey);
+
+            tokenHandler.ValidateToken(token, new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuer = false,
+                ValidateAudience = false
+            }, out SecurityToken validatedToken);
+
+            var jwtToken = (JwtSecurityToken)validatedToken;
+
+            var claims = jwtToken.Claims.ToList();
+
+            return claims;
+        }
+        public static string GetValueFromToken(string token, string claimType)
+        {
+            var claims = DecodeToken(token);
+
+            var claim = claims.FirstOrDefault(c => c.Type == claimType);
+
+            return claim?.Value ?? string.Empty; // Trả về giá trị nếu claim tồn tại, nếu không thì trả về chuỗi rỗng
+        }
+
     }
 }

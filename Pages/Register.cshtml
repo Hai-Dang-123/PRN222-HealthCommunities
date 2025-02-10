@@ -1,4 +1,71 @@
 ﻿@page
 @model HealthCommunitiesCheck2.Pages.RegisterModel
+
 @{
+    ViewData["Title"] = "Register";
+    Layout = "Shared/MinimalLayout";
+}
+
+<link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css" />
+<link rel="stylesheet" href="css/sign-In-Up.css" />
+
+<!-- JS -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+<!-- Sign up form -->
+<section class="signup">
+    <div class="container">
+        <div class="signup-content">
+            <div class="signup-form">
+                <h2 class="form-title">Sign up</h2>
+                <form method="POST" class="register-form" id="register-form">
+                    <div class="form-group">
+                        <label for="fullName"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <input type="text" name="RegisterData.FullName" id="FullName" placeholder="Your Name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="zmdi zmdi-email"></i></label>
+                        <input type="email" name="RegisterData.Email" id="email" placeholder="Your Email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                        <input type="password" name="RegisterData.Password" id="pass" placeholder="Password" />
+                    </div>
+                    <div class="form-group">
+                        <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                        <input type="password" name="RegisterData.PasswordConfirmed" id="re_pass" placeholder="Repeat your password" />
+                    </div>
+                    <div class="form-group">
+                      
+                        <div>
+                            <input type="checkbox" id="role-student" name="RegisterData.RoleName" value="Student">
+                            <label for="role-student" class="label-agree-term"><span><span></span></span>Student</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="role-lecturer" name="RegisterData.RoleName" value="Lecturer">
+                            
+                            <label for="role-lecturer" class="label-agree-term"><span><span></span></span>Lecturer</label>
+                        </div>
+                            
+                    </div>
+                    <div class="form-group form-button">
+                        <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+                    </div>
+                </form>
+            </div>
+            <div class="signup-image">
+                <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                <a href="#" class="signup-image-link">I am already member</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger mt-2">@Model.ErrorMessage</div>
 }
