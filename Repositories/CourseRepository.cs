@@ -1,6 +1,7 @@
 ﻿using HealthCommunitiesCheck2.Data;
 using HealthCommunitiesCheck2.IRepositories;
 using HealthCommunitiesCheck2.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace HealthCommunitiesCheck2.Repositories
 {
@@ -11,5 +12,7 @@ namespace HealthCommunitiesCheck2.Repositories
         {
             _context = context;
         }
+
+
     }
 }

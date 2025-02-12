@@ -1,6 +1,9 @@
-﻿namespace HealthCommunitiesCheck2.IService
+﻿using HealthCommunitiesCheck2.DTO;
+
+namespace HealthCommunitiesCheck2.IService
 {
     public interface ICourseService
     {
+        Task<ResponseDTO> DeleteCourse(Guid courseId);
     }
 }

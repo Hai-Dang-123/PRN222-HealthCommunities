@@ -62,6 +62,27 @@ namespace HealthCommunitiesCheck2.Utilities
                 return Guid.Empty; 
             }
         }
+        // lấy role từ token
+        public string? GetRoleFromToken()
+        {
+
+            try
+            {
+                var token = _httpContextAccessor.HttpContext?.Request.Cookies["AccessToken"];
+                if (string.IsNullOrEmpty(token))
+                    return ""; // Không có token => Trả về mặc định
+
+                var claims = JwtProvider.DecodeToken(token);
+                var fullNameClaim = claims.FirstOrDefault(c => c.Type == "Role");
+
+                return fullNameClaim?.Value; // Nếu không có FullName, trả về "User"
+            }
+            catch
+            {
+                return ""; // Nếu lỗi, trả về mặc định
+            }
+
+        }
     
 
 

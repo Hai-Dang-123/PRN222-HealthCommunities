@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1pzNM+hRh6MtRMWJlpMTzgMUg5PE4NAhK96jDFrP+3A=",
+  "Hash": "IOqMAHbHFeeeFGRl8TUN4CqOr6YitS5zMddZjJCnbEM=",
   "Source": "HealthCommunitiesCheck2",
   "BasePath": "_content/HealthCommunitiesCheck2",
   "Mode": "Default",
@@ -3181,8 +3181,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "p52z5jyeb7",
-      "Integrity": "reYBgXIbKG5QtJHLL2pLKsz13ANbo3qFkfwUUncI2f4=",
+      "Fingerprint": "dl0v2aefh4",
+      "Integrity": "wV6dpQl8ROJCcx1sl2ruT9WLx6r3GIRQdrzIM4x91lY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -16897,6 +16897,51 @@
       ]
     },
     {
+      "Route": "js/site.dl0v2aefh4.js",
+      "AssetFile": "D:\\HOC\\PRN211\\PRN211-HealthCommunities\\PRN222-HealthCommunities\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "982"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wV6dpQl8ROJCcx1sl2ruT9WLx6r3GIRQdrzIM4x91lY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 08:11:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dl0v2aefh4"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wV6dpQl8ROJCcx1sl2ruT9WLx6r3GIRQdrzIM4x91lY="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "D:\\HOC\\PRN211\\PRN211-HealthCommunities\\PRN222-HealthCommunities\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -16907,7 +16952,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "499"
+          "Value": "982"
         },
         {
           "Name": "Content-Type",
@@ -16915,11 +16960,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"reYBgXIbKG5QtJHLL2pLKsz13ANbo3qFkfwUUncI2f4=\""
+          "Value": "\"wV6dpQl8ROJCcx1sl2ruT9WLx6r3GIRQdrzIM4x91lY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 13:47:06 GMT"
+          "Value": "Tue, 11 Feb 2025 08:11:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16929,52 +16974,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-reYBgXIbKG5QtJHLL2pLKsz13ANbo3qFkfwUUncI2f4="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.p52z5jyeb7.js",
-      "AssetFile": "D:\\HOC\\PRN211\\PRN211-HealthCommunities\\PRN222-HealthCommunities\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "499"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"reYBgXIbKG5QtJHLL2pLKsz13ANbo3qFkfwUUncI2f4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 13:47:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "p52z5jyeb7"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-reYBgXIbKG5QtJHLL2pLKsz13ANbo3qFkfwUUncI2f4="
+          "Value": "sha256-wV6dpQl8ROJCcx1sl2ruT9WLx6r3GIRQdrzIM4x91lY="
         }
       ]
     },

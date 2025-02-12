@@ -7,7 +7,9 @@
     var currentPage = ViewData["CurrentPage"]?.ToString();
 
     var fullName = UserUtility.GetFullNameFromToken();
-    
+
+    var role = UserUtility.GetRoleFromToken();
+
 }
 
 <link rel="stylesheet" href="css/normalize.css">
@@ -50,6 +52,15 @@
                      <ul class="dropdown-menu" id="dropdownMenu">
                             <li><a asp-page="/Profile">Profile</a></li>
                             <li><a asp-page="/Logout">Logout</a></li>
+                            @if (role == "Lecturer")
+                            {
+                                <li><a asp-page="/ManageCourse">Manage Course</a></li>
+                            }
+                            else if (role == "Student")
+                            {
+                                <li><a asp-page="/ViewCourse">View Course</a></li>
+                            }
+
                         </ul> 
                  </li> 
 
