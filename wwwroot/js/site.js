@@ -13,3 +13,17 @@
     window.addEventListener('scroll', checkScroll);
     checkScroll(); // Gọi ngay khi tải trang
 });
+
+$(document).ready(function () {
+    $("#userDropdown").click(function (event) {
+        event.preventDefault(); // Ngăn chặn chuyển hướng nếu có
+        $("#dropdownMenu").toggle(); // Hiển thị hoặc ẩn dropdown menu
+    });
+
+    // Đóng dropdown khi click ra ngoài
+    $(document).click(function (event) {
+        if (!$(event.target).closest("#userDropdown, #dropdownMenu").length) {
+            $("#dropdownMenu").hide();
+        }
+    });
+});

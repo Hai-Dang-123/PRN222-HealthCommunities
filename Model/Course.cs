@@ -13,6 +13,8 @@ namespace HealthCommunitiesCheck2.Model
 
         public string Description { get; set; }
 
+        public bool IsDelete { get; set; }
+
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 

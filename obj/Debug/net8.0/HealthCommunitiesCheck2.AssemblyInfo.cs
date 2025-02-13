@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HealthCommunitiesCheck2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+410d4fa5ad4cfd394ca1e8ff58138c22ffd60b18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c45bed6e61053b286a97e66fe960f84d7849db8")]
 [assembly: System.Reflection.AssemblyProductAttribute("HealthCommunitiesCheck2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HealthCommunitiesCheck2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
