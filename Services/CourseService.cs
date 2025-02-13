@@ -36,5 +36,56 @@ namespace HealthCommunitiesCheck2.Services
             return new ResponseDTO("Course deleted successfully.", 200, true);
         }
 
+        public async Task<ResponseDTO> GetAllCourse()
+        {
+
+            try
+            {
+                var course = await _unitOfWork.Course.ToListAsync();
+                return new ResponseDTO("Courses retrieved successfully", 200, true, course);
+
+
+            }
+            catch (Exception ex)
+            {
+
+                return new ResponseDTO("Courses retrieved false", 400, false);
+            }
+
+        }
+        public async Task<ResponseDTO> AddNewCourse(CourseDTO courseDTO)
+        {
+            var userId = _userUtility.GetUserIDFromToken();
+            if (userId == Guid.Empty)
+                return new ResponseDTO("Unauthorized", 401, false);
+            var user = await _unitOfWork.User.GetByIdAsync(userId);
+            if (user == null)
+                return new ResponseDTO("User not found", 404, false);
+            if (string.IsNullOrWhiteSpace(courseDTO.Title))
+                return new ResponseDTO("Course name can't be blank", 400, false);
+            if (user != null && user.Role != null && user.Role.Equals("Student"))
+            {
+                return new ResponseDTO("You not allow to do this", 444, false);
+            }
+
+            var course = new Course
+            {
+                UserID = userId,
+                CourseID = Guid.NewGuid(),
+                Title = courseDTO.Title,
+                Description = courseDTO.Description,
+                StartDate = DateTime.Now,
+                Price = courseDTO.Price,
+                EndDate = courseDTO.EndDate,
+                IsOnline = courseDTO.IsOnline,
+                CreatedAt = courseDTO.CreatedAt,
+            };
+            await _unitOfWork.Course.AddAsync(course);
+            await _unitOfWork.SaveChangeAsync();
+
+            return new ResponseDTO("Add course successfull", 200,
+                true);
+
+        }
     }
 }
