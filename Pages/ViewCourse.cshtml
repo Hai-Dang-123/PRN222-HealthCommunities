@@ -1,6 +1,39 @@
 ﻿@page
 @model ViewCourseModel
 @{
-    ViewData["Title"] = "Course List";
+    ViewData["Title"] = "Danh sách khóa học";
 }
+
+ 
+
+<h2>Khóa học đã đăng ký</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Enrollment Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.EnrolledCourses != null && Model.EnrolledCourses.Any())
+        {
+            @foreach (var enrolled in Model.EnrolledCourses)
+            {
+                <tr>
+                    <td>@enrolled.CourseTitle</td>   
+                    <td>@enrolled.EnrollmentDate.ToString("yyyy-MM-dd")</td>
+                    <td>@enrolled.Status</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="3">Chưa có khóa học nào được đăng ký.</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
 

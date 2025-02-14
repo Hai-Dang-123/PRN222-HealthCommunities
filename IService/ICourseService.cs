@@ -8,6 +8,7 @@ namespace HealthCommunitiesCheck2.IService
         Task<ResponseDTO> GetAllCourse();
 
         Task<ResponseDTO> AddNewCourse(CourseDTO courseDTO);
+        Task<ResponseDTO> GetEnrolledCourses();
 
     }
 }

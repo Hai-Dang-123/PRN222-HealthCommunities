@@ -139,5 +139,10 @@ namespace HealthCommunitiesCheck2.Repositories
         {
             return _dbSet.ToListAsync();
         }
+
+        public async Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().Where(predicate).ToListAsync();
+        }
     }
 }
