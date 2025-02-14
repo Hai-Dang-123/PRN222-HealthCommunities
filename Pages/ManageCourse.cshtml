@@ -1,10 +1,8 @@
 ﻿@page
-@model HealthCommunitiesCheck2.Pages.TrainingModel
+@model HealthCommunitiesCheck2.Pages.ManageCourseModel
 @{
-	ViewData["Title"] = "Training";
+    ViewData["Title"] = "Course List";
 }
-
-<h2>@ViewData["Title"]</h2>
 
 @if (Model.Courses != null && Model.Courses.Any())
 {
@@ -38,10 +36,11 @@
             }
         </tbody>
     </table>
+    <a asp-page="/CreateCourse" class="btn btn-primary">Tạo khóa học</a>
 
 }
 else
 {
+    <a asp-page="/CreateCourse" class="btn btn-primary">Tạo khóa học</a>
     <p>No courses available!</p>
 }
-

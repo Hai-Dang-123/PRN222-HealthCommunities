@@ -6,15 +6,15 @@ using Newtonsoft.Json;
 
 namespace HealthCommunitiesCheck2.Pages
 {
-    public class TrainingModel : PageModel
+    public class ManageCourseModel : PageModel
     {
         private readonly ICourseService _courseService;
-        public TrainingModel(ICourseService courseService)
+        public ManageCourseModel(ICourseService courseService)
         {
             _courseService = courseService;
         }
-
         public List<CourseDTO> Courses { get; set; }
+
 
         public async Task OnGetAsync()
         {

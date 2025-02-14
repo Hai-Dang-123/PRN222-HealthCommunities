@@ -1,0 +1,11 @@
+
+.vs/
+
+bin/
+obj/
+
+
+*.cache
+*.nuget
+*.editorconfig
+*.sqlite
