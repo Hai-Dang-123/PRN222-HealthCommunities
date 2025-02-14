@@ -2,6 +2,7 @@
 using HealthCommunitiesCheck2.IRepositories;
 using HealthCommunitiesCheck2.Model;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace HealthCommunitiesCheck2.Repositories
 {
@@ -12,5 +13,13 @@ namespace HealthCommunitiesCheck2.Repositories
     {
         _context = context;
     }
-}
+
+        public async Task<IEnumerable<Enrollment>> FindAsync(Expression<Func<Enrollment, bool>> predicate)
+        {
+            return await _context.Enrollments
+                .Where(predicate)
+                .Include(e => e.Course)  // Load Course luôn
+                .ToListAsync();
+        }
+    }
 }

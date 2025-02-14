@@ -88,5 +88,30 @@ namespace HealthCommunitiesCheck2.Services
                 true);
 
         }
+        public async Task<ResponseDTO> GetEnrolledCourses()
+        {
+            var userId = _userUtility.GetUserIDFromToken();
+            if (userId == Guid.Empty)
+                return new ResponseDTO("Unauthorized", 401, false);
+
+            var enrollments = await _unitOfWork.Enrollment.FindAsync(e => e.UserID == userId);
+
+            if (enrollments == null || !enrollments.Any())
+                return new ResponseDTO("No enrolled courses found.", 404, false);
+
+            var enrolledCourses = enrollments.Select(e => new EnrollmentDTO
+            {
+                EnrollmentID = e.EnrollmentID,
+                UserID = e.UserID,
+                CourseID = e.Course.CourseID,
+                EnrollmentDate = e.EnrollmentDate,
+                Status = e.Status.ToString(),
+                CourseTitle = e.Course.Title,
+              
+            }).ToList();
+
+            return new ResponseDTO("Enrolled courses retrieved successfully.", 200, true, enrolledCourses);
+        }
+
     }
 }

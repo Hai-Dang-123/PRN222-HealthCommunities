@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HealthCommunitiesCheck2.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250213060800_abc")]
+    [Migration("20250214084740_abc")]
     partial class abc
     {
         /// <inheritdoc />
