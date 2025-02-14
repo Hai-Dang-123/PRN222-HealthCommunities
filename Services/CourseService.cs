@@ -1,5 +1,6 @@
 ﻿using HealthCommunitiesCheck2.DTO;
 using HealthCommunitiesCheck2.IService;
+using HealthCommunitiesCheck2.Model;
 using HealthCommunitiesCheck2.UnitOfWork;
 using HealthCommunitiesCheck2.Utilities;
 
