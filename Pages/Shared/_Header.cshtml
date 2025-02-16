@@ -1,0 +1,73 @@
+﻿@inject HealthCommunitiesCheck2.Utilities.UserUtility UserUtility
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@using System.Security.Claims
+
+@{
+    var currentPage = ViewData["CurrentPage"]?.ToString();
+
+    var fullName = UserUtility.GetFullNameFromToken();
+
+    var role = UserUtility.GetRoleFromToken();
+
+}
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/featherlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/featherlight.min.js"></script>
+
+
+<header id="top">
+    <div class="wrapper">
+        <h1 class="logo"><a href="/Index">Health Communities</a></h1>
+        <nav>
+            <ul id="navigation">
+                <li><a asp-page="/Index" class="@(currentPage == "Index" ? "active" : "")">Home</a></li> 
+            <li><a asp-page="/About" class="@(currentPage == "About" ? "active" : "")">About</a></li> 
+             <li><a asp-page="/News" class="@(currentPage == "News" ? "active" : "")">News</a></li> 
+             <li><a asp-page="/Training" class="@(currentPage == "Training" ? "active" : "")">Training</a></li> 
+             <li><a asp-page="/Research" class="@(currentPage == "Research" ? "active" : "")">Research</a></li> 
+             <li><a asp-page="/MedicalKnowledge" class="@(currentPage == "MedicalKnowledge" ? "active" : "")">Medical Knowledge</a></li> 
+             <li><a asp-page="/Contact" class="@(currentPage == "Contact" ? "active" : "")">Contact</a></li> 
+             
+
+             @* điều kiện *@
+              @if (string.IsNullOrEmpty(fullName)) 
+            
+            { 
+                 <!-- Khi chưa đăng nhập --> 
+                 <li><a asp-page="/Login">Sign In</a></li> 
+                 <li><a asp-page="/Register">Sign Up</a></li> 
+             } 
+             else 
+             { 
+                 <li class="dropdown"> 
+                     <a href="#" class="dropdown-toggle" id="userDropdown"> 
+                         <span>@fullName</span> 
+                     </a> 
+                     <ul class="dropdown-menu" id="dropdownMenu">
+                            <li><a asp-page="/Profile">Profile</a></li>
+                            <li><a asp-page="/Logout">Logout</a></li>
+                            @if (role == "Lecturer")
+                            {
+                                <li><a asp-page="/ManageCourse">Manage Course</a></li>
+                            }
+                            else if (role == "Student")
+                            {
+                                <li><a asp-page="/ViewCourse">View Course</a></li>
+                            }
+
+                        </ul> 
+                 </li> 
+
+             }
+
+            </ul>
+        </nav>
+    </div>
+</header>
+

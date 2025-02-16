@@ -1,0 +1,283 @@
+﻿
+@page
+@model IndexModel
+@inject HealthCommunitiesCheck2.Utilities.UserUtility UserUtility
+@{
+    ViewData["Title"] = "Home page";
+    var fullName = UserUtility.GetFullNameFromToken();
+    // var userId = UserUtility.GetUserIDFromToken();
+    
+    
+}
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/featherlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/featherlight.min.js"></script>
+
+
+<section id="banner" class="fade-in"><a name="home"></a>
+    <div class="wrapper">
+        <h2>Health Communities</h2>
+        <p class="subtitle">Healthy Living, Happy Life</p>
+        <div class="buttons">
+            <a href="/MedicalKnowledge" class="button-1">Learn More</a>
+            <a href="/About" class="button-2">About Us</a>
+        </div>
+    </div>
+</section>
+
+<section class="services-section fade-in">
+    <a name="services"></a>
+    <div class="wrapper">
+        <h3>Services</h3>
+        <p class="subtitle">We do lots of cool things</p>
+        <ul class="services-list">
+            <li>
+                <div class="image-container">
+                    <img src="images/icon-pencil.png" alt="services icon">
+                </div>
+                <h5>Health Training & Education</h5>
+                <p>Enhancing skills for healthcare professionals. </p>
+                <a href="#">Learn More</a>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="images/icon-camera.png" alt="services icon">
+                </div>
+                <h5>Health Projects & Partnerships</h5>
+                <p>Driving innovation through research and collaboration. </p>
+                <a href="#">Learn More</a>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="images/icon-film.png" alt="services icon">
+                </div>
+                <h5>Health News & Events</h5>
+                <p>Updates on research, healthcare, and events. </p>
+                <a href="#">Learn More</a>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</section>
+
+<section class="text-section fade-in">
+    <div class="wrapper">
+        <div class="image align-left">
+            <img src="images/light-bulb.png" alt="health research" class="align-left">
+        </div>
+        <div class="text align-left">
+            <h3>Advancing Health Through Research & Training</h3>
+            <p class="subtitle">Empowering Healthcare Professionals</p>
+            <p>We are dedicated to improving healthcare through innovative research and high-quality training programs. Our goal is to enhance knowledge and skills, fostering a healthier community.</p>
+            <p>Join us in shaping the future of healthcare with cutting-edge education and impactful collaborations.</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+
+<section class="features-section fade-in">
+    <div class="wrapper">
+        <ul class="feature-squares">
+            <li>
+                <div class="image">
+                    <img src="images/icon-eye.png" alt="Research Excellence">
+                </div>
+                <div class="text">
+                    <h5>Research Excellence</h5>
+                    <p>We lead groundbreaking healthcare research, focusing on innovative solutions to enhance patient care, disease prevention, and medical advancements for a healthier future.</p>
+                </div>
+            </li>
+            <li>
+                <div class="image">
+                    <img src="images/icon-clock.png" alt="Quality Training">
+                </div>
+                <div class="text">
+                    <h5>Quality Training</h5>
+                    <p>Our comprehensive training programs equip healthcare professionals with cutting-edge knowledge and skills, ensuring excellence in clinical practice, research, and public health initiatives.</p>
+                </div>
+            </li>
+            <li>
+                <div class="image">
+                    <img src="images/icon-dashboard.png" alt="Strong Collaboration">
+                </div>
+                <div class="text">
+                    <h5>Strong Collaboration</h5>
+                    <p>By partnering with leading universities, hospitals, and research centers, we foster a dynamic network that drives innovation and real-world impact in the healthcare sector.</p>
+                </div>
+            </li>
+            <li>
+                <div class="image">
+                    <img src="images/icon-headset.png" alt="Continuous Support">
+                </div>
+                <div class="text">
+                    <h5>Continuous Support</h5>
+                    <p>We provide ongoing mentorship, access to valuable resources, and continuous professional development to empower healthcare professionals throughout their careers.</p>
+                </div>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</section>
+
+
+
+<section class="text-section fade-in">
+    <div class="wrapper">
+        <div class="image align-right">
+            <img src="images/chat-bubbles.png" alt="health discussion" class="align-left" style="margin-top: 60px;">
+        </div>
+        <div class="text align-right">
+            <h3>Connect With Us</h3>
+            <p class="subtitle">Committed to Advancing Healthcare Together</p>
+            <p>We value collaboration and open discussions to improve healthcare research, training, and innovation.</p>
+            <ul class="list-checkmarks">
+                <li>Expert-led healthcare training programs.</li>
+                <li>Innovative medical research initiatives.</li>
+                <li>Partnerships with leading institutions.</li>
+                <li>Continuous support for healthcare professionals.</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+
+
+
+
+
+<section class="portfolio-section fade-in">
+    <a name="projects"></a>
+    <h3>Our Projects</h3>
+    <p class="subtitle">Innovative Research & Training Initiatives</p>
+
+    <ul class="portfolio-list">
+        <li class="item">
+            <a href="images/project-1.jpg" data-featherlight="images/project-1.jpg" class="photo-overlay">
+                <img src="images/project-1-thumb.jpg" alt="Healthcare Training Program" />
+            </a>
+        </li>
+        <li class="item">
+            <a href="images/project-2.jpg" data-featherlight="images/project-2.jpg" class="photo-overlay">
+                <img src="images/project-2-thumb.jpg" alt="Public Health Research" />
+            </a>
+        </li>
+        <li class="item">
+            <a href="images/project-3.jpg" data-featherlight="images/project-3.jpg" class="photo-overlay">
+                <img src="images/project-3-thumb.jpg" alt="Medical Innovation Studies" />
+            </a>
+        </li>
+        <li class="item">
+            <a href="images/project-4.jpg" data-featherlight="images/project-4.jpg" class="photo-overlay">
+                <img src="images/project-4-thumb.jpg" alt="Community Health Programs" />
+            </a>
+        </li>
+        <li class="item">
+            <a href="images/project-5.jpg" data-featherlight="images/project-5.jpg" class="photo-overlay">
+                <img src="images/project-5-thumb.jpg" alt="Global Health Partnerships" />
+            </a>
+        </li>
+        <li class="item">
+            <a href="images/project-6.jpg" data-featherlight="images/project-6.jpg" class="photo-overlay">
+                <img src="images/project-6-thumb.jpg" alt="Clinical Research Trials" />
+            </a>
+        </li>
+        <div class="clear"></div>
+    </ul>
+</section>
+
+  @if (string.IsNullOrEmpty(fullName)) 
+            
+            { 
+
+    <section class="email-list-section fade-in">
+    <h3>Join Us Now</h3>
+    <p class="subtitle">Be a part of our health community</p>
+
+    <button type="submit" title="Join Now">Join Now</button>
+</section>
+            } else{
+    <section class="email-list-section fade-in">
+        <h3>Hi @fullName</h3>
+        <p class="subtitle">Happy to see you here !!!</p>
+
+    </section>
+
+            }
+
+
+<section class="pricing-section fade-in">
+    <div class="wrapper">
+        <h3>Services</h3>
+        <p class="subtitle">We do lots of cool things</p>
+        <ul class="pricing-table">
+            <li>
+                <div class="price-container">
+                    <span class="currency-symbol" style="left: 40px;">$</span>
+                    <span class="price">9</span>
+                    <span class="term">/mo</span>
+                </div>
+                <h5>Basic</h5>
+                <ul class="features">
+                    <li>500GB Storage</li>
+                    <li>Unlimited Bandwidth</li>
+                    <li>10 Clients</li>
+                    <li>50 Projects</li>
+                    <div class="clear"></div>
+                </ul>
+                <a href="#" class="button-2">Begin</a>
+            </li>
+            <li>
+                <div class="price-container">
+                    <span class="currency-symbol" style="left: 20px;">$</span>
+                    <span class="price">12</span>
+                    <span class="term">/mo</span>
+                </div>
+                <h5>Premium</h5>
+                <ul class="features">
+                    <li>1TB Storage</li>
+                    <li>Unlimited Bandwidth</li>
+                    <li>50 Clients</li>
+                    <li>250 Projects</li>
+                    <div class="clear"></div>
+                </ul>
+                <a href="#" class="button-1">Begin</a>
+            </li>
+            <li>
+                <div class="price-container">
+                    <span class="currency-symbol" style="left: 20px;">$</span>
+                    <span class="price">18</span>
+                    <span class="term">/mo</span>
+                </div>
+                <h5>Elite</h5>
+                <ul class="features">
+                    <li>5TB Storage</li>
+                    <li>Unlimited Bandwidth</li>
+                    <li>Unlimited Clients</li>
+                    <li>Unlimited Projects</li>
+                    <div class="clear"></div>
+                </ul>
+                <a href="#" class="button-2">Begin</a>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</section>
+
+<section class="text-section fade-in">
+    <div class="text align-center">
+        <h3>Heard Enough?</h3>
+        <p class="subtitle">Let's get started</p>
+        <p><a href="#" class="button-1">Begin</a></p>
+    </div>
+</section>
+
+
+
+
+
+

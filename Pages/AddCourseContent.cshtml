@@ -1,0 +1,42 @@
+﻿@page
+@model HealthCommunitiesCheck2.Pages.AddCourseContentModel
+@{
+}
+
+<h2>Thêm Video & Reading cho khóa học</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label>Thêm Video:</label>
+        <input type="file" class="form-control" asp-for="VideoFiles" id="videoUpload" multiple accept="video/*">
+        <button type="button" onclick="checkFileSize()">Kiểm tra kích thước</button>
+        <script>
+            function checkFileSize() {
+                let files = document.getElementById('videoUpload').files;
+                if (files.length > 0) {
+                    let size = files[0].size / 1024 / 1024; // Chuyển KB -> MB
+                    alert("Kích thước file: " + size.toFixed(2) + "MB");
+                } else {
+                    alert("Chưa chọn file!");
+                }
+            }
+        </script>
+        <button type="submit" asp-page-handler="UploadVideo" class="btn btn-secondary mt-2">Tải Video Lên</button>
+    </div>
+
+    <div class="form-group">
+        <label>Thêm Reading:</label>
+        <input type="file" class="form-control" asp-for="ReadingFiles" multiple accept=".pdf,.doc,.docx,.txt">
+        <button type="submit" asp-page-handler="UploadReading" class="btn btn-secondary mt-2">Tải Reading Lên</button>
+    </div>
+
+    <button type="submit" asp-page-handler="CompleteCourse" class="btn btn-success">Hoàn thành khóa học</button>
+
+
+</form>
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <div class="alert @(Model.Message.Contains("Lỗi") ? "alert-danger" : "alert-success") mt-2">
+        @Model.Message
+    </div>
+}

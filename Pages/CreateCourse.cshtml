@@ -1,0 +1,51 @@
+﻿@page
+@model CreateCourseModel
+@{
+    ViewData["Title"] = "Tạo khóa học";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="NewCourse.Title"></label>
+        @* <input type="text" class="form-control" asp-for="NewCourse.Title"> *@
+        <textarea class="form-control" asp-for="NewCourse.Title"></textarea>
+        <span class="text-danger" asp-validation-for="NewCourse.Title"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewCourse.Description"></label>
+        <textarea class="form-control" asp-for="NewCourse.Description"></textarea>
+        <span class="text-danger" asp-validation-for="NewCourse.Description"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewCourse.Price"></label>
+        <input type="number" class="form-control" asp-for="NewCourse.Price">
+        <span class="text-danger" asp-validation-for="NewCourse.Price"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewCourse.StartDate"></label>
+        <input type="date" class="form-control" asp-for="NewCourse.StartDate">
+        <span class="text-danger" asp-validation-for="NewCourse.StartDate"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewCourse.EndDate"></label>
+        <input type="date" class="form-control" asp-for="NewCourse.EndDate">
+        <span class="text-danger" asp-validation-for="NewCourse.EndDate"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Hình thức học</label>
+        <div>
+            <input type="radio" asp-for="NewCourse.IsOnline" value="true"> Online
+            <input type="radio" asp-for="NewCourse.IsOnline" value="false"> Offline
+        </div>
+    </div>
+
+    
+    <button type="submit" asp-page-handler="Create" class="btn btn-primary">Lưu</button>
+</form>

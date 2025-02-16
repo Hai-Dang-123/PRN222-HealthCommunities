@@ -1,0 +1,52 @@
+﻿@page
+@model HealthCommunitiesCheck2.Pages.ManageCourseModel
+@{
+    ViewData["Title"] = "Course List";
+}
+
+@if (Model.Courses != null && Model.Courses.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Course Title</th>
+                <th>Description</th>
+
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Format</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Courses.Count; i++)
+            {
+                var course = Model.Courses[i];
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>@course.Title</td>
+                    <td>@course.Description</td>
+
+                    <td>@course.StartDate.ToString("MM/dd/yyyy")</td>
+                    <td>@course.EndDate.ToString("MM/dd/yyyy")</td>
+                    <td>@(course.IsOnline ? "Online" : "Offline")</td>
+                    <td>@course.Price.ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a asp-page="/CreateCourse" class="btn btn-primary">Tạo khóa học</a>
+
+}
+else
+{
+    <a asp-page="/CreateCourse" class="btn btn-primary">Tạo khóa học</a>
+    <p>No courses available!</p>
+}
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <div class="alert @(Model.Message.Contains("Lỗi") ? "alert-danger" : "alert-success") mt-2">
+        @Model.Message
+    </div>
+}
